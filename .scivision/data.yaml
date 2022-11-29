@@ -1,0 +1,9 @@
+sources:
+  cell_cycle:
+    description: Crops of H2B-FP stained nuclei in MDCK cells. Five groups are available with labels Interphase, Prometaphase, Metaphase, Anaphase and Apoptosis.
+    driver: zarr
+    args:
+      urlpath: '{{ CATALOG_DIR }}/../cell_cycle.zarr'
+      group: '/'
+      mask_and_scale: False
+      consolidated: False

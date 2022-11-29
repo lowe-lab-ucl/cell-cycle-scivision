@@ -1,0 +1,11 @@
+name: cell_cycle_classifier
+url: https://github.com/lowe-lab-ucl/cell_cycle_classifier
+import: cell_cycle_classifier
+model: resnet50
+args:
+prediction_fn:
+    call: predict
+    args:
+        X: image
+    kwargs:
+        normalize: True
